@@ -4,10 +4,11 @@
     2. 混杂模式中，页面以宽松的向后兼容的方式呈现，模拟老式浏览器的行为以防止站点无法工作
     DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现
 ### 行内元素,块状元素,行内块状元素分别有哪些，区别？
-    行内元素：span b i  
+    行内元素：span b i a img input button textarea select
             设置宽高无效，对margin仅设置左右方向有效 上下无效，padding设置上下左右都有效，不会自动换行
-    块状元素：div p ul ol li dl dt dd
+    块状元素：div p ul ol li dl dt dd h1-h6
               可以设置宽高，margin,padding都有效，自动换行，默认从上到下排列
     行内块状元素：不自动换行，可设置宽高，margin,padding都有效，从左到右排列
     转换方式  display:inline   display:inline-block   display:block
-    
+### H5新增标签
+    header footer section article aside details nav audio video canvas progress mark
