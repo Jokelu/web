@@ -4,4 +4,17 @@
     relative： 生成相对定位，相对于其正常位置进行定位
     static： 默认值，没有定位
     inherit： 从父元素继承position属性的值
-    
+### 水平垂直居中
+    ``` javascript
+      div {
+        width: 300px;
+        height: 300px;
+        background: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto
+      }
+    ```
