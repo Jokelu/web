@@ -5,7 +5,7 @@
     static： 默认值，没有定位
     inherit： 从父元素继承position属性的值
 ### 水平垂直居中
-    ``` javascript
+    ```javascript
       div {
         width: 300px;
         height: 300px;
