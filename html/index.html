@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-    span{
-      width: 50px;
-      height: 50px;
-      margin: 30px;
+    /* div {
+      width: 300px;
+      height: 300px;
+      background: green;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto
+    } */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+    }
+
+    .wrap>span {
+      color: #f00;
+    }
+
+    .box {
+      background: green;
       padding: 20px;
-      background: #ccc;
+      align-self: center;
+      justify-self: center;
     }
   </style>
 </head>
+
 <body>
-  <span>15</span>
+  <div class="wrap">
+    <div class="box"></div>
+    <span>4151</span>
+    <span>asdadadad <span>按时大大所</span></span>
+  </div>
+  <div class="qweq">按时大大</div>
+  <div>adsaadasdadas</div>
 </body>
+
 </html>
