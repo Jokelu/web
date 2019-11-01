@@ -5,8 +5,10 @@
     static： 默认值，没有定位
     inherit： 从父元素继承position属性的值
 ### 水平垂直居中
-    ```css
-     div {
+      <body>
+        <div></div>
+      </body>
+    1. div {
           width: 300px;
           height: 300px;
           background: green;
@@ -17,4 +19,50 @@
           bottom: 0;
           margin: auto;
         }
-    ```
+    2. div {
+          width: 300px;
+          height: 300px;
+          background: green;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -150px;
+          margin-top: -150px;
+        }
+    3. div {
+          width: 300px;
+          height: 300px;
+          background: green;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%)
+        }
+    4.  body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    5. body {
+          width: 100vw;
+          height: 100vh;
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+        }
+        div {
+          background: green;
+          padding: 20px;
+          display: inline-block;
+        }
+    6. body {
+          width: 100vw;
+          height: 100vh;
+          display: grid;
+        }
+        div {
+          background: green;
+          padding: 20px;
+          align-self: center;
+          justify-self: center;
+        }
